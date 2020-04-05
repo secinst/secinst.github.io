@@ -10,6 +10,7 @@ In the real world, we *instrument* complex things like cars, airplanes, factorie
 * Gather interesting security information directly from an application
 * Perform security testing, finding vulnerabilities, and generating assurance
 * Detect attacks and even prevent entire classes of exploits
+
 Watch this video for an introduction to the magic of software security instrumentation.
 
 [.  ]
