@@ -1,14 +1,15 @@
 # Site Settings
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by Thiago Rossener.
+name: OSIP
+title: OSIP | The Open Security Instrumentation Project
+description: An open community dedicated to ensuring the world's software is instrumented for security.
 tags:
-  - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
-email: youremail@xyz.com
+  - DevSecOps
+  - appsec
+  - OWASP
+  - secinst
+  - IAST
+  - RASP
+email: secinst@gmail.com
 disqus_username: disqus_username
 show_hero: true
 menu:
