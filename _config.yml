@@ -9,6 +9,8 @@ tags:
   - secinst
   - IAST
   - RASP
+  - bytebuddy
+  - frida
 email: secinst@gmail.com
 disqus_username: disqus_username
 show_hero: true
