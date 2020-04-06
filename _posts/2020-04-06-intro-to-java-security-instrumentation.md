@@ -4,8 +4,8 @@ layout: post
 title: Introduction to Java Security Instrumentation
 subtitle: Analyze, monitor, and protect your apps quickly and easily.
 description: How to unleash the power of Java Security Instrumentation in your organization.
-image: http://jaxenter.com/wp-content/uploads/2013/01/lock2.jpg
-optimized_image: http://jaxenter.com/wp-content/uploads/2013/01/lock2.jpg
+image: https://jaxenter.com/wp-content/uploads/2013/01/lock2.jpg
+optimized_image: https://jaxenter.com/wp-content/uploads/2013/01/lock2.jpg
 category: java
 tags:
   - bytebuddy
