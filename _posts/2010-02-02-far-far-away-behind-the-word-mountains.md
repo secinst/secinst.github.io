@@ -7,9 +7,9 @@ description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua.
 image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821648/theme5_wmutla.jpg
+  https://2xkcvt35vyxycuy7x23e0em1a5g-wpengine.netdna-ssl.com/wp-content/uploads/2015/03/neural-networks.jpg
 optimized_image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821648/theme5_wmutla.jpg
+  https://2xkcvt35vyxycuy7x23e0em1a5g-wpengine.netdna-ssl.com/wp-content/uploads/2015/03/neural-networks.jpg
 category: travel
 tags:
   - mountains
