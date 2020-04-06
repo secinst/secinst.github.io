@@ -1,6 +1,6 @@
 # Site Settings
-name: OSIP
-title: OSIP | The Open Security Instrumentation Project
+name: The Open Security Instrumentation Project
+title: The Open Security Instrumentation Project
 description: An open community dedicated to ensuring the world's software is instrumented for security.
 tags:
   - DevSecOps
@@ -9,6 +9,8 @@ tags:
   - secinst
   - IAST
   - RASP
+  - bytebuddy
+  - frida
 email: secinst@gmail.com
 disqus_username: disqus_username
 show_hero: true
