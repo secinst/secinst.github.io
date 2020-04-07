@@ -19,6 +19,8 @@ menu:
     url: /
   - title: About
     url: /about
+  - title: Categories
+    url: /categories
   - title: Contact
     url: /contact
   - title: Feed
