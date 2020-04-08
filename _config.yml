@@ -19,8 +19,14 @@ menu:
     url: /
   - title: About
     url: /about
-  - title: Categories
-    url: /categories
+  - title: Getting Started
+    url: /category/tutorial
+  - title: Java
+    url: /category/java
+  - title: .NET
+    url: /category/dotnet
+  - title: Node.js
+    url: /category/node
   - title: Contact
     url: /contact
   - title: Feed
