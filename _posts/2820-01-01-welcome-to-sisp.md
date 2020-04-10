@@ -4,8 +4,8 @@ layout: post
 title: Welcome to the Open Security Instrumentation Project
 subtitle: Start here to learn what security instrumentation is and how you can get started. You'll also learn about our mission and values and how you can join us. Or jump straight to the categories and articles below.
 description: Learn about security instrumentation, our mission and values, and how to get started.
-image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme2_ylcxxz.jpg
-optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme2_ylcxxz.jpg
+image: https://www.findlawimages.com/blogs/placeholders/Technologist.jpg
+optimized_image: https://www.findlawimages.com/blogs/placeholders/Technologist.jpg
 category: tutorial
 tags:
   - appsec
