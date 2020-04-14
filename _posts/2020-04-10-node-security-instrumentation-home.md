@@ -6,7 +6,7 @@ subtitle: Analyze, monitor, and protect your apps quickly and easily.
 description: A free and open community project to encourage the use of Security Instrumentation in the Node.js ecosystem
 image: https://www.brandeps.com/logo-download/N/Node-JS-logo-vector-01.svg
 optimized_image: https://www.brandeps.com/logo-download/N/Node-JS-logo-vector-01.svg
-category: java
+category: node
 tags:
   - IAST
 author: secinst
