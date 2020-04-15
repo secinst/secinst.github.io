@@ -19,7 +19,7 @@ The Open Software Instrumentation Project is a free and open community dedicated
 
 We think of SI as a new way to think about how modern software is assembled. Instead of attempting to get all developers try to remember and manually replicate the right patterns and idioms everywhere, SI is a modular and elegant way deliver exactly the right code to exactly where it needs to be.
 
-> SI lets you 1) target specific locations in your application with a *"join point,"* and 2) enhances the code in those locations with an *"advice."* 
+> ***Terminology:*** SI lets you target specific locations in your application by defining a *"pointcut."* You can enhance the code in those locations with an *"advice."* The actual locations where code modification occurs are called *"join points."*
 
 Some people <a href="https://en.wikipedia.org/wiki/Instrumentation_(computer_programming)">think</a> SI is just for adding performance timers or extra logging to applications. But it's actually far more powerful than that. SI can help achieve <a href="https://en.wikipedia.org/wiki/Separation_of_concerns">separation of concerns</a>, modularity, performance, security, scalability, and more. There's really no limit to how you can enhance software using instrumentation. 
 
