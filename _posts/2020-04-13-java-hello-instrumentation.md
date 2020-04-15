@@ -38,7 +38,7 @@ Try visiting http://localhost:8080/ticketbook/hello.jsp and enter "Fred". Looks 
 
 > You could easily fix this by adding some escaping to the code. But the typical application reads hundreds or thousands of parameters. How can we take care of *all* of them at once?
 
-# Instrumentation
+## Instrumentation
 
 Instrumentation to the rescue. Let's instrument a method that will eliminate any dangerous characters from all HTTP parameters. This is definitely overkill, but it's a good demonstration of the power and elegance of the instrumentation approach. Basically, if you can articulate a rule for where certain code should be used, instrumentation is a clean and easy way to make sure it's always there.
 
@@ -47,7 +47,7 @@ Let's build an SI agent. There are three basic steps.
 2. Create our agent code with pointcuts and advices
 3. Run our test application with our new agent
 
-# Step 1: Set up our POM to automatically build an agent jar
+## Step 1: Set up our POM to automatically build an agent jar
 
 Here's a sample pom.xml file to put in your project directory. Running "mvn install" should do the trick. Pay attention to the manifest entries, this is what tells the Java Instrumentation API that this is an instrumentation agent jar.
 
@@ -126,7 +126,7 @@ Here's a sample pom.xml file to put in your project directory. Running "mvn inst
 </project>
 ```
 
-# Step 2: Create our agent code with pointcuts and advices*
+## Step 2: Create our agent code with pointcuts and advices*
 
 In this code, we are using the excellent ByteBuddy library. The AgentBuilder.Default() uses the Java Instrumentation API to set up the transformations we want to perform. Here, we specify the .type() we want as anything extending "javax.servlet.ServletRequest."  And we tell ByteBuddy to transform any methods named "getParameter" in any matching classes. ByteBuddy supports a number of matchers and boolean operations that will allow you to very narrowly define your pointcuts.
 
@@ -159,7 +159,7 @@ public class ValidatingAgent {
 }
 ```
 
-# Step 3: Run our test application with our new agent*
+## Step 3: Run our test application with our new agent*
 
 Finally, the good part. All you have to do is add the "-javaagent" flag to however you launch Java. Every server has a different place to specify JVM arguments, but the simplest way is to use the JAVA_TOOL_OPTIONS environment variable. Make sure you use the full path to the "target" directory with your new agent jar file.
 
@@ -167,11 +167,11 @@ Finally, the good part. All you have to do is add the "-javaagent" flag to howev
 export JAVA_TOOL_OPTIONS="-javaagent:/full/path/to/validating-agent-0.9-jar-with-dependencies.jar"
 ```
 
-Then restart your application server and try entering &lt;script&gt;alert("hacked")&lt;/script&gt;.  You should see all those special characters turned into '_'. While this will defend against XSS, it's massive overkill. But hopefully it inspired you to think of some amazing new uses for instrumentation.
+Then restart your application server and try entering &lt;script&gt;alert("hacked")&lt;/script&gt;.  You should see all those special characters turned into '_'. Try your new agent out on a big application and you'll see that you didn't just fix one problem, you made this change *everywhere* you use getParameter(). Note, we didn't cover many other sources of untrusted input - just this one call. And while this will defend against XSS, it's massive overkill.
 
 [[ IMAGE ]]
 
-# Closing Thoughts
+## Closing Thoughts
 
-So that's a whirlwind introduction to Java SI. Please let me know if this was helpful to you in the comments below.
+So that's a whirlwind introduction to Java SI. Hopefully this inspired you to think of some amazing new uses for instrumentation. Please let me know if this was helpful to you in the comments below.
 
