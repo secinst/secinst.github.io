@@ -13,7 +13,9 @@ tags:
 author: secinst
 ---
 
-The Open Software Instrumentation Project is a free and open community dedicated on harnessing the magic and power of software instrumentation (SI). We learn, code, share, create tools, build community, and more. Join us!
+The Open Software Instrumentation Project is a free and open community dedicated on harnessing the magic and power of software instrumentation (SI). We learn, code, share, create tools, build community, and more.
+
+[[Join us!]]
 
 ## Our Mission and Vision
 
@@ -31,15 +33,11 @@ Some people <a href="https://en.wikipedia.org/wiki/Instrumentation_(computer_pro
 
 ## Community Principles
 
-Everything in the Open Software Instrumentation Project is freely available under a common open source license. We encourage vendor participation but this is not a forum for sales or marketing activity. 
+Everything in the Open Software Instrumentation Project is freely available under a common open source license. We value contribution, interaction, transparency, and common sense over rigid governance. We encourage open, candid, respectful, and relevant discussion and will not tolerate abusive or inappropriate content or behavior. We are committed to diversity and do not tolerate discrimination on the basis of race, creed, color, ethnicity, national origin, religion, sex, sexual orientation, gender identity and expression, age, physical characteristics or ability, health status, mental ability, or marital status. We encourage vendor participation but this is not a forum for sales or marketing activity.
 
 ## Join Us
 
 We need your help. Whether you're a student, security expert, performance engineer, or a grizzled compiler designer, if you're interested in SI you can join us and help us advance the state-of-the-art. Pick a topic, do some research, and share what you learn. {HERE FOR INSTRUCTIONS ON CONTRIBUTING}
 
-JOIN NOW BUTTON
-
-Here are some resources to help you get started...
-
-
+[[JOIN US]]
 
