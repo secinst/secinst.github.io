@@ -15,18 +15,19 @@ author: secinst
 
 The Open Software Instrumentation Project is a free and open community dedicated on harnessing the magic and power of software instrumentation (SI). We learn, code, share, create tools, build community, and more. Join us!
 
-> In the real world, we *instrument* complex things like cars, airplanes, factories, space shuttles, etc...  It would be irresponsible and crazy to operate these things without great instrumentation -- we'd have no way to know what's going on. But software is arguably the most complex thing ever created by humanity, and we have terrible instrumentation. Traditional logging is nowhere near powerful or flexible enough.
+> In the real world, we *instrument* complex things like cars, airplanes, factories, space shuttles, etc...  It would be irresponsible and crazy to operate these things without great instrumentation -- we'd have no way to know what's going on. But software is arguably the most complex thing ever created by humanity, and we have terrible instrumentation. Traditional logging is nowhere near what we need.
 
-Most people <a href="https://en.wikipedia.org/wiki/Instrumentation_(computer_programming)">think</a> SI is just for adding performance timers or extra logging to applications. But it's actually incredibly powerful. There's really no limit to how you can enhance software using instrumentation. You can make it simpler, more observable, faster, more secure, etc...
+Most people <a href="https://en.wikipedia.org/wiki/Instrumentation_(computer_programming)">think</a> SI is just for adding performance timers or extra logging to applications. But it's actually far more powerful than that. There's really no limit to how you can enhance software using instrumentation. You can make it simpler, more observable, faster, more secure, etc...
 
-> Technically, SI lets you 1) target specific locations in your application with a *"join point"*, and 2) enhances the code in those locations with an *"advice"*. It's just that simple.
+> Technically, SI lets you 1) target specific locations in your application with a *"join point,"* and 2) enhances the code in those locations with an *"advice."* This approach helps to achieve <a href="https://en.wikipedia.org/wiki/Separation_of_concerns">separation of concerns</a> and modularity.
 
 You can use SI to insert timers around a database call. Or you can report the use of a weak encryption algorithm. You can even enable new security defenses. Typically, SI weaves in these changes as the code loads, although it is possible to instrument at compile-time (static SI) or even after an application has started running.
 
-> We think of SI as a new way to think about how modern software is assembled. Imagine that your coding guideline says that you should always log failed access control checks. Instead of having developers try to remember and manually replicate the right code everywhere it's needed an application, SI is a modular and elegant way deliver exactly the right code to exactly where it needs to be.
+> We think of SI as a new way to think about how modern software is assembled. Instead of attempting to get all developers try to remember and manually replicate the right patterns and idioms everywhere, SI is a modular and elegant way deliver exactly the right code to exactly where it needs to be.
 
+# Join Us
 
-**Instrumentation** - 
+We need your help. Whether you're a student, security expert, performance engineer, or a grizzled compiler designer, if you're interested in SI you can join us and help us advance the state-of-the-art. Pick a topic, do some research, and share what you learn. {HERE FOR INSTRUCTIONS ON CONTRIBUTING}
 
 JOIN NOW BUTTON
 
