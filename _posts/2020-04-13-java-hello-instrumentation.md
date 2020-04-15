@@ -14,7 +14,7 @@ author: secinst
 paginate: true
 ---
 
-In this article, we will set up a simple "Hello, World" type example for using instrumentation. Here's a simple JSP that reads the "name" parameter...
+In this article, we will build a simple Java SI agent and use it to enhance a simple "Hello, World" JSP. Here's a JSP that reads and displays the "name" parameter...
 
 ```
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
@@ -34,7 +34,7 @@ In this article, we will set up a simple "Hello, World" type example for using i
 </html>
 ```
 
-Try visiting http://localhost:8080/ticketbook/hello.jsp?name=Fred and it works just great. But unfortunately, you just introduced a cross-site scripting (XSS) vulnerability. This happens anytime you write untrusted data (the "name" parameter) to the HTTP response without escaping it. Try visiting http://localhost:8080/ticketbook/hello.jsp?name=&lt;script&gt;alert("hacked")&lt;/script&gt; and you'll see the problem.
+Try visiting http://localhost:8080/ticketbook/hello.jsp and enter "Fred". Looks good! But unfortunately, you just introduced a cross-site scripting (XSS) vulnerability. This happens anytime you write untrusted data (the "name" parameter) to the HTTP response without escaping it. Try entering &lt;script&gt;alert("hacked")&lt;/script&gt; and you'll see the problem.
 
 > You could easily fix this by adding some escaping to the code. But the typical application reads hundreds or thousands of parameters. How can we take care of *all* of them at once?
 
@@ -163,7 +163,11 @@ public class ValidatingAgent {
 
 Finally, the good part. All you have to do is add the "-javaagent" flag to however you launch Java. Every server has a different place to specify JVM arguments, but the simplest way is to use the JAVA_TOOL_OPTIONS environment variable. Make sure you use the full path to the "target" directory with your new agent jar file.
 
+```shell
 export JAVA_TOOL_OPTIONS="-javaagent:/full/path/to/validating-agent-0.9-jar-with-dependencies.jar"
+```
+
+Then restart your application server and try entering &lt;script&gt;alert("hacked")&lt;/script&gt;.  You should see all those special characters turned into '_'. While this will defend against XSS, it's massive overkill. But hopefully it inspired you to think of some amazing new uses for instrumentation.
 
 [[ IMAGE ]]
 
